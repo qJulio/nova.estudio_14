@@ -39,35 +39,6 @@
             color: white;
             text-decoration: none;
         }
-        /* Estilos para el menú hamburguesa */
-        .menu-toggle {
-            display: none;
-            background: none;
-            border: none;
-            color: white;
-            font-size: 24px;
-            cursor: pointer;
-        }
-        /* Estilos móviles */
-        @media (max-width: 768px) {
-            .nav-list {
-                display: none;
-                flex-direction: column;
-                background-color: #003366;
-                position: absolute;
-                top: 60px;
-                right: 10px;
-                width: 200px;
-                padding: 10px;
-                border-radius: 5px;
-            }
-            .nav-list.active {
-                display: flex;
-            }
-            .menu-toggle {
-                display: inline-block;
-            }
-        }
     </style>
 </head>
 <body>
@@ -78,7 +49,6 @@
         <img src="images/Nova Estudio Logo.png" alt="Nova Estudio">
         <h1>Nova Estudio</h1>
     </a>
-    <button class="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
     <nav>
         <ul class="nav-list">
             <li><a href="index.html">Inicio</a></li>
