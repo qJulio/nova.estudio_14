@@ -5,15 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nova Estudio - Diseño y Desarrollo Web</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
     <link rel="shortcut icon" href="images/Nova Estudio Logo.png" type="image/x-icon">
     <style>
-        /* Estilos generales */
-        body {
-            font-family: 'Poppins', sans-serif;
-            margin: 0;
-            padding: 0;
+        /* Estilos para el estilo zigzag y cuadros celestes */
+        .about-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 40px 0;
         }
 
+        .about-item.reverse {
+            flex-direction: row-reverse;
+        }
+
+        .about-text {
+            flex: 1;
+            padding: 20px;
+            background-color: #66b3ff; /* Fondo celeste */
+            color: white;
+            border-radius: 8px;
+            margin-right: 20px;
+            text-align: justify;
+        }
+
+        .about-image {
+            flex: 1;
+            margin-left: 20px;
+        }
+
+        .about-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        /* Ajustes responsivos */
+        @media (max-width: 768px) {
+            .about-item {
+                flex-direction: column;
+            }
+            
+            .about-item.reverse {
+                flex-direction: column;
+            }
+
+            .about-text {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+
+            .about-image {
+                margin-left: 0;
+            }
+        }
+
+        /* Estilos para el encabezado y menú */
         .main-header {
             display: flex;
             justify-content: space-between;
@@ -105,7 +153,7 @@
 <section id="hero" class="hero-section">
     <div class="hero-content">
         <h2>Impulsa tu negocio con un sitio web único</h2>
-        <p>En Nova Estudio , creamos experiencias digitales impactantes.</p>
+        <p>En Nova Estudio, creamos experiencias digitales impactantes.</p>
         <a href="services.html" class="btn-primary">Descubre Nuestros Servicios</a>
     </div>
     <div class="hero-image" style="background-image: url('hero-image.jpg');"></div>
