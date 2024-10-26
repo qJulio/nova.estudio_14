@@ -158,6 +158,20 @@
     <p>&copy; 2024 Nova Estudio. Todos los derechos reservados.</p>
 </footer>
 
+<!-- JavaScript para las animaciones -->
+<script>
+    // Cuando el documento esté listo
+    document.addEventListener("DOMContentLoaded", function() {
+        document.body.classList.add('fade-in');
+    });
+
+    // Agregar evento antes de que la página se cargue
+    window.addEventListener('beforeunload', function() {
+        document.body.classList.remove('fade-in');
+        document.body.classList.add('fade-out');
+    });
+</script>
+
 <!-- JavaScript para el menú de hamburguesa -->
 <script>
     document.querySelector('.menu-toggle').addEventListener('click', function () {
