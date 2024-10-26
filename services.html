@@ -3,10 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Servicios - Nova Estudio</title>
+    <title>Sobre Nosotros - Nova Estudio</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="shortcut icon" href="images/Nova Estudio Logo.png" type="image/x-icon">
+    <style>
+        /* Estilos para el estilo zigzag y cuadros celestes */
+        .about-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 40px 0;
+        }
+
+        .about-item.reverse {
+            flex-direction: row-reverse;
+        }
+
+        .about-text {
+            flex: 1;
+            padding: 20px;
+            background-color: #66b3ff; /* Fondo celeste */
+            color: white;
+            border-radius: 8px;
+            margin-right: 20px;
+            text-align: justify;
+        }
+
+        .about-image {
+            flex: 1;
+            margin-left: 20px;
+        }
+
+        .about-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        /* Ajustes responsivos */
+        @media (max-width: 768px) {
+            .about-item {
+                flex-direction: column;
+            }
+            
+            .about-item.reverse {
+                flex-direction: column;
+            }
+
+            .about-text {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+
+            .about-image {
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
     <style>
         .logo {
             display: inline-block; /* Asegura que el logo esté al lado del texto */
@@ -21,8 +77,7 @@
             font-size: 26px; /* Tamaño del texto */
         }
     </style>
-</head>
-<body>
+    <!-- Encabezado -->
     <header class="main-header">
         <div class="container">
             <div class="logo">
@@ -31,7 +86,7 @@
                     <h1>Nova Estudio</h1>
             </div>
             <nav>
-                <ul class="nav-list">
+                <ul>
                     <li><a href="index.html">Inicio</a></li>
                     <li><a href="about.html">Sobre Nosotros</a></li>
                     <li><a href="services.html">Servicios</a></li>
