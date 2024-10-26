@@ -276,3 +276,24 @@ h1, h2, h3 {
 .about-box p {
     margin: 0;
 }
+@media (max-width: 768px) {
+  /* Ajustes específicos para pantallas pequeñas */
+  body {
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    padding: 10px;
+    width: 100%;
+  }
+  /* Ajusta las imágenes y elementos a tamaño de pantalla */
+  img, video, iframe {
+    max-width: 100%;
+    height: auto;
+  }
+  /* Ajusta el menú y otros elementos de navegación */
+  .navbar {
+    flex-direction: column;
+  }
+}
