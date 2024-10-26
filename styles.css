@@ -350,4 +350,14 @@ h1, h2, h3 {
     display: flex;
   }
 }
+/* Animación de desvanecimiento */
+.fade-out {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.fade-in {
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
 
