@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio - Nova Estudio</title>
+    <title>Nova Estudio - Diseño y Desarrollo Web</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="shortcut icon" href="images/Nova Estudio Logo.png" type="image/x-icon">
     <style>
-        /* Estilos para el encabezado y logo */
+        /* Estilos del encabezado */
         .main-header {
             display: flex;
             justify-content: space-between;
@@ -28,7 +28,7 @@
             width: 50px;
             margin-right: 10px;
         }
-        /* Menú de navegación */
+        /* Menú */
         .nav-list {
             display: flex;
             list-style: none;
@@ -39,27 +39,34 @@
             color: white;
             text-decoration: none;
         }
-        /* Estilos para la sección de portafolio */
-        .portfolio-section {
-            padding: 20px;
-            text-align: center;
-            font-family: 'Poppins', sans-serif;
-        }
-        .portfolio-item {
-            margin-bottom: 20px;
-        }
-        .portfolio-image {
-            width: 100%;
-            max-width: 600px;
-            height: auto;
-            margin-top: 10px;
-            border-radius: 8px;
-        }
-        footer {
-            text-align: center;
-            padding: 10px;
-            background-color: #003366;
+        /* Estilos para el menú hamburguesa */
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
             color: white;
+            font-size: 24px;
+            cursor: pointer;
+        }
+        /* Estilos móviles */
+        @media (max-width: 768px) {
+            .nav-list {
+                display: none;
+                flex-direction: column;
+                background-color: #003366;
+                position: absolute;
+                top: 60px;
+                right: 10px;
+                width: 200px;
+                padding: 10px;
+                border-radius: 5px;
+            }
+            .nav-list.active {
+                display: flex;
+            }
+            .menu-toggle {
+                display: inline-block;
+            }
         }
     </style>
 </head>
@@ -71,6 +78,7 @@
         <img src="images/Nova Estudio Logo.png" alt="Nova Estudio">
         <h1>Nova Estudio</h1>
     </a>
+    <button class="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
     <nav>
         <ul class="nav-list">
             <li><a href="index.html">Inicio</a></li>
@@ -82,39 +90,59 @@
     </nav>
 </header>
 
-<!-- Sección de Portafolio -->
-<section class="portfolio-section">
-    <h2>Nuestro Portafolio</h2>
-    <p>A continuación, te mostramos algunos de nuestros proyectos más destacados:</p>
-    
-    <div class="portfolio-item">
-        <h3>Proyecto 1</h3>
-        <p>Descripción breve del proyecto y su impacto.</p>
-        <img src="images/project1.jpg" alt="Proyecto 1" class="portfolio-image">
+<!-- Sección Héroe -->
+<section id="hero" class="hero-section">
+    <div class="hero-content">
+        <h2>Impulsa tu negocio con un sitio web único</h2>
+        <p>En Nova Estudio, creamos experiencias digitales impactantes.</p>
+        <a href="services.html" class="btn-primary">Descubre Nuestros Servicios</a>
     </div>
-    
-    <div class="portfolio-item">
-        <h3>Proyecto 2</h3>
-        <p>Descripción breve del proyecto y su impacto.</p>
-        <img src="images/project2.jpg" alt="Proyecto 2" class="portfolio-image">
+    <div class="hero-image" style="background-image: url('hero-image.jpg');"></div>
+</section>
+
+<!-- Sección de Información -->
+<section class="info-section">
+    <h2>¿Por qué elegirnos?</h2>
+    <p>En Nova Estudio, nos dedicamos a ofrecer servicios de diseño y desarrollo web de alta calidad. Nuestro enfoque se basa en:</p>
+    <ul>
+        <li><strong>Creatividad:</strong> Cada proyecto es único y personalizado.</li>
+        <li><strong>Calidad:</strong> Utilizamos las últimas tecnologías y prácticas recomendadas.</li>
+        <li><strong>Soporte:</strong> Estamos aquí para ayudarte en cada paso del camino.</li>
+    </ul>
+    <img src="images/que-es-el-diseno-web-header.jpg" alt="Imagen de servicio" class="info-image">
+</section>
+
+<!-- Sección de Servicios -->
+<section class="services-section">
+    <div class="services-title">
+        <h2>Nuestros Servicios</h2>
     </div>
-    
-    <div class="portfolio-item">
-        <h3>Proyecto 3</h3>
-        <p>Descripción breve del proyecto y su impacto.</p>
-        <img src="images/project3.jpg" alt="Proyecto 3" class="portfolio-image">
+    <div class="service-item left">
+        <div class="text">
+            <h3>Diseño Web</h3>
+            <p>Creación de sitios web atractivos y funcionales que capturan la esencia de tu marca.</p>
+        </div>
+        <div class="image">
+            <img src="images/diseno-de-paginas-web-atractivas-y-funcionales-para-mejorar-usabilidad.png" alt="Diseño Web">
+        </div>
     </div>
-    
-    <div class="portfolio-item">
-        <h3>Proyecto 4</h3>
-        <p>Descripción breve del proyecto y su impacto.</p>
-        <img src="images/project4.jpg" alt="Proyecto 4" class="portfolio-image">
+    <div class="service-item right">
+        <div class="text">
+            <h3>Desarrollo a Medida</h3>
+            <p>Soluciones personalizadas para satisfacer las necesidades específicas de tu negocio.</p>
+        </div>
+        <div class="image">
+            <img src="images/soluciones-experiencia-cliente.jpg" alt="Desarrollo a Medida">
+        </div>
     </div>
-    
-    <div class="portfolio-item">
-        <h3>Proyecto 5</h3>
-        <p>Descripción breve del proyecto y su impacto.</p>
-        <img src="images/project5.jpg" alt="Proyecto 5" class="portfolio-image">
+    <div class="service-item left">
+        <div class="text">
+            <h3>SEO y Marketing Digital</h3>
+            <p>Mejoramos tu visibilidad en línea y atraemos más clientes a través de estrategias efectivas.</p>
+        </div>
+        <div class="image">
+            <img src="images/que-estrategias-puedo-utilizar-para-aumentar-mi-visibilidad-en-linea.jpg" alt="SEO">
+        </div>
     </div>
 </section>
 
@@ -122,6 +150,13 @@
 <footer>
     <p>&copy; 2024 Nova Estudio. Todos los derechos reservados.</p>
 </footer>
+
+<!-- JavaScript para el menú de hamburguesa -->
+<script>
+    document.querySelector('.menu-toggle').addEventListener('click', function () {
+        document.querySelector('.nav-list').classList.toggle('active');
+    });
+</script>
 
 </body>
 </html>
