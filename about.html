@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nosotros - Nova Estudio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="images/Nova Estudio Logo.png" type="image/x-icon">
+    <style>
+        /* Estilos para el estilo zigzag y cuadros celestes */
+        .about-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 40px 0;
+        }
+
+        .about-item.reverse {
+            flex-direction: row-reverse;
+        }
+
+        .about-text {
+            flex: 1;
+            padding: 20px;
+            background-color: #66b3ff; /* Fondo celeste */
+            color: white;
+            border-radius: 8px;
+            margin-right: 20px;
+            text-align: justify;
+        }
+
+        .about-image {
+            flex: 1;
+            margin-left: 20px;
+        }
+
+        .about-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        /* Ajustes responsivos */
+        @media (max-width: 768px) {
+            .about-item {
+                flex-direction: column;
+            }
+            
+            .about-item.reverse {
+                flex-direction: column;
+            }
+
+            .about-text {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+
+            .about-image {
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <style>
+        .logo {
+            display: inline-block; /* Asegura que el logo esté al lado del texto */
+            vertical-align: middle; /* Alineación vertical con el texto */
+            margin-right: 10px; /* Espacio entre el logo y el texto */
+        }
+        .title-link {
+            display: inline-flex;
+            align-items: center; /* Alinea el logo y el texto verticalmente */
+            text-decoration: none; /* Elimina el subrayado */
+            color: #003366; /* Color del texto */
+            font-size: 26px; /* Tamaño del texto */
+        }
+    </style>
+    <!-- Encabezado -->
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html" class="title-link">
+                    <img src="images/Nova Estudio Logo.png" alt="Nova Estudio" class="logo" width="50"> <!-- Ajusta el tamaño según necesites -->
+                    <h1>Nova Estudio</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="about.html">Sobre Nosotros</a></li>
+                    <li><a href="services.html">Servicios</a></li>
+                    <li><a href="portfolio.html">Portafolio</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sección de Sobre Nosotros -->
+    <section class="about-section">
+        <h2>¿Quiénes Somos?</h2>
+        <p>En Nova Estudio, somos una empresa especializada en la creación de sitios web personalizados y funcionales. Trabajamos con empresas que desean mejorar su presencia en línea, brindando soluciones tecnológicas y creativas que destacan en el mercado digital.</p>
+        
+        <!-- Sección de Nuestra Visión -->
+        <div class="about-item">
+            <div class="about-text">
+                <h3>Nuestra Visión</h3>
+                <p>Ser la empresa líder en el diseño y desarrollo de páginas web a nivel mundial, promoviendo la innovación y la excelencia en todos nuestros proyectos. Buscamos crear soluciones que no solo funcionen, sino que impacten en la vida digital de nuestros clientes, ayudándolos a alcanzar nuevas alturas en sus negocios.</p>
+            </div>
+            <div class="about-image">
+                <img src="images/Nuestra vision.png" alt="Visión" class="about-img"> <!-- Imagen de visión -->
+            </div>
+        </div>
+
+        <!-- Sección de Nuestra Misión -->
+        <div class="about-item reverse">
+            <div class="about-text">
+                <h3>Nuestra Misión</h3>
+                <p>Ofrecer servicios de diseño y desarrollo web de la más alta calidad, enfocados en la satisfacción del cliente y en la mejora constante de nuestras capacidades técnicas. Nos comprometemos a crear experiencias digitales únicas que agreguen valor a las marcas de nuestros clientes, con un enfoque estratégico en la innovación tecnológica y la atención personalizada.</p>
+            </div>
+            <div class="about-image">
+                <img src="images/nUESTRA MISION.jpeg"Misión" class="about-img"> <!-- Imagen de misión -->
+            </div>
+        </div>
+
+        <!-- Sección de Nuestros Valores -->
+        <div class="about-item">
+            <div class="about-text">
+                <h3>Nuestros Valores</h3>
+                <p>Nos guiamos por la creatividad, la pasión por la tecnología y el compromiso con la excelencia. Nuestros valores incluyen la innovación constante, la responsabilidad hacia nuestros clientes, la transparencia en nuestras operaciones, y el deseo de superar las expectativas en cada proyecto. Creemos firmemente que el éxito de nuestros clientes es nuestro éxito.</p>
+            </div>
+            <div class="about-image">
+                <img src="images/Nuestros valores.png" alt="Valores" class="about-img"> <!-- Imagen de valores -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de Página -->
+    <footer>
+        <p>&copy; 2024 Nova Estudio. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>

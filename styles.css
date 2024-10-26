@@ -1,0 +1,278 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    background-color: #f0f4ff; /* Fondo claro */
+}
+
+h1, h2, h3 {
+    color: #003366; /* Azul oscuro */
+}
+
+a {
+    text-decoration: none;
+    color: #003366; /* Azul oscuro */
+}
+
+/* Contenedor principal */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Encabezado */
+header {
+    background-color: #003366; /* Azul oscuro */
+    padding: 20px 0;
+    color: white;
+    text-align: center;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-list li {
+    margin: 0 20px;
+}
+
+.nav-list a {
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-list a:hover {
+    color: #66b3ff; /* Azul claro */
+}
+
+/* Sección Héroe */
+.hero-section {
+    background: linear-gradient(45deg, #003366, #66b3ff); /* Degradado azul */
+    padding: 100px 0;
+    color: white;
+    text-align: center;
+}
+
+.hero-content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.btn-primary {
+    background-color: #0044cc; /* Azul */
+    color: white;
+    padding: 15px 30px;
+    border-radius: 5px;
+    display: inline-block;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #66b3ff; /* Azul claro */
+}
+
+/* Sección de Información */
+.info-section {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #ffffff; /* Blanco */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.info-section h2 {
+    margin-bottom: 20px;
+    font-size: 28px; /* Aumentar tamaño de texto */
+}
+
+.info-section p {
+    font-size: 16px; /* Aumentar tamaño de texto */
+}
+
+.info-image {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    margin: 20px auto;
+}
+
+/* Servicios en Zig-Zag */
+.services-section {
+    padding: 80px 20px; /* Aumentar el padding */
+    background-color: #ffffff; /* Fondo blanco para destacar */
+}
+
+.services-title h2 {
+    text-align: center;
+    margin-bottom: 40px; /* Aumentar margen inferior */
+    font-size: 32px; /* Aumentar tamaño de texto */
+}
+
+.service-item {
+    display: flex;
+    align-items: center;
+    margin: 40px 0; /* Aumentar margen entre servicios */
+}
+
+.service-item.left {
+    flex-direction: row; /* Imagen a la derecha */
+}
+
+.service-item.right {
+    flex-direction: row-reverse; /* Imagen a la izquierda */
+}
+
+.service-item .text {
+    flex: 1;
+    padding: 30px; /* Aumentar padding */
+    background: #e7f0ff; /* Fondo claro */
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.service-item:hover .text {
+    transform: translateY(-5px); /* Efecto de hover */
+}
+
+.service-item .image {
+    flex: 1;
+    padding: 20px;
+}
+
+.service-item .image img {
+    width: 80%; /* Ajustar tamaño de imagen */
+    max-width: 300px; /* Tamaño máximo para pantallas grandes */
+    border-radius: 10px;
+}
+
+/* Media Queries para mejor adaptación */
+@media (max-width: 768px) {
+    .service-item {
+        flex-direction: column; /* Coloca los elementos uno debajo del otro */
+        align-items: center; /* Centra el contenido */
+    }
+    
+    .service-item .text,
+    .service-item .image {
+        padding: 10px;
+    }
+
+    .hero-content h2 {
+        font-size: 28px; /* Tamaño de fuente más pequeño para pantallas pequeñas */
+    }
+
+    .hero-content p {
+        font-size: 16px; /* Tamaño de fuente más pequeño para pantallas pequeñas */
+    }
+
+    .info-section h2 {
+        font-size: 24px; /* Aumentar tamaño de texto en pantallas pequeñas */
+    }
+
+    .info-section p {
+        font-size: 14px; /* Aumentar tamaño de texto en pantallas pequeñas */
+    }
+
+    .services-title h2 {
+        font-size: 28px; /* Ajustar tamaño de texto en pantallas pequeñas */
+    }
+}
+
+/* Pie de Página */
+footer {
+    background-color: #003366; /* Azul oscuro */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+/* Estilos generales */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+h1, h2, h3 {
+    color: #004085;
+    text-align: center;
+}
+
+/* Encabezado */
+.main-header {
+    background-color: #004085;
+    padding: 20px 0;
+}
+
+.main-header .logo h1 {
+    color: white;
+    margin: 0;
+}
+
+.main-header nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.main-header nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.main-header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+/* Sección de Sobre Nosotros */
+.about-section {
+    padding: 40px;
+    text-align: center;
+    background-color: #e9f3ff; /* Fondo más bonito */
+}
+
+.about-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+/* Cuadros de visión, misión y valores */
+.about-box {
+    background-color: white;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 80%; /* Levemente más ancho */
+    text-align: left;
+    font-size: 18px;
+}
+
+.about-box p {
+    margin: 0;
+}
