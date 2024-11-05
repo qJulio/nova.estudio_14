@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Código Promocional - Nova Estudio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
+        .promo-popup {
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            text-align: center;
+            animation: fadeIn 1s ease-in;
+        }
+        .promo-code {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #003366; /* Color del texto */
+            margin: 20px 0;
+        }
+        .close-button {
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            color: #fff;
+            background-color: #003366;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .close-button:hover {
+            background-color: #00509e;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <div class="promo-popup">
+        <h2>¡Código Promocional!</h2>
+        <p class="promo-code">NOVAE-30</p>
+        <p>Aplica este código de <strong>10% de descuento</strong> a la hora de pagar.</p>
+        <button class="close-button" onclick="closePopup()">Cerrar</button>
+    </div>
+
+    <script>
+        function closePopup() {
+            window.location.href = 'index.html'; // Redirigir a la página de índice
+        }
+    </script>
+</body>
+</html>
