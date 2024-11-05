@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Nova Estudio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="images/Nova Estudio Logo.png" type="image/x-icon">
+    <style>
+        .logo {
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+        .title-link {
+            display: inline-flex;
+            align-items: center;
+            text-decoration: none;
+            color: #003366;
+            font-size: 26px;
+        }
+        /* Ajuste del espacio entre el título y la barra de navegación */
+        .main-header h1 {
+            margin: 0; /* Elimina márgenes */
+            padding-bottom: 10px; /* Ajusta este valor para igualar el espacio deseado */
+        }
+        nav {
+            margin-top: 10px; /* Ajusta según sea necesario */
+        }
+        
+        /* Estilos para los botones de redes sociales */
+        .social-buttons {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 60px 0;
+        }
+        .social-btn-container {
+            display: flex;
+            align-items: center;
+            margin: 30px 0;
+        }
+        .social-btn {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: #003366;
+            margin-right: 40px; /* Aumenté el margen derecho */
+            margin-left: 40px; /* Aumenté el margen izquierdo */
+            font-size: 40px; /* Aumenté el tamaño de la fuente */
+        }
+        .social-icon {
+            width: 120px; /* Aumenté el tamaño del ícono */
+            height: 120px;
+            margin-right: 10px; /* Espacio entre el ícono y el texto */
+        }
+        .social-description {
+            text-align: center;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Encabezado -->
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html" class="title-link">
+                    <img src="images/Nova Estudio Logo.png" alt="Nova Estudio" class="logo" width="50">
+                    <h1>Nova Estudio</h1>
+                </a>
+            </div>
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="about.html">Sobre Nosotros</a></li>
+                    <li><a href="services.html">Servicios</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="social-buttons">
+        <h3>Conéctate con nosotros:</h3>
+        <div class="social-btn-container">
+            <a href="https://www.instagram.com/nova_estudio14/" target="_blank" class="social-btn">
+                <img src="images/instagram.jpg" alt="Instagram" class="social-icon"> Instagram
+            </a>
+            <a href="https://api.whatsapp.com/send/?phone=50497538260&text&type=phone_number&app_absent=0" target="_blank" class="social-btn">
+                <img src="images/Whataspp.jpg" alt="WhatsApp" class="social-icon"> WhatsApp
+            </a>
+        </div>
+        <p class="social-description">Síguenos en Instagram para ver nuestros últimos trabajos y promociones exclusivas.</p>
+        <p class="social-description">Envíanos un mensaje por WhatsApp para consultas rápidas y atención personalizada.</p>
+    </div>
+
+    <!-- Pie de Página -->
+    <footer>
+        <p>&copy; 2024 Nova Estudio. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

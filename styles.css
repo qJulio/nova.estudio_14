@@ -1,0 +1,217 @@
+/* Reset y Configuración de fuente */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    background-color: #f0f4ff;
+    line-height: 1.6;
+    transition: all 0.3s ease;
+}
+
+h1, h2, h3 {
+    color: #81a8d1;
+}
+
+/* Estilo para enlaces */
+a {
+    text-decoration: none;
+    color: #81a8d1;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #66b3ff;
+}
+
+/* Contenedor principal */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Encabezado */
+header {
+    background: linear-gradient(90deg, #003366, #004085);
+    padding: 20px 0;
+    color: white;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav-list li {
+    transition: transform 0.3s ease;
+}
+
+.nav-list li:hover {
+    transform: scale(1.1);
+}
+
+/* Sección Héroe */
+.hero-section {
+    background: linear-gradient(135deg, #003366, #66b3ff);
+    padding: 80px 20px 80px 20px; /* Reducimos el padding inferior */
+    color: white;
+    text-align: center;
+    border-radius: 0 0 50% 50% / 8%;
+}
+
+.hero-content h2 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin-bottom: 20px; /* Reducimos el margen inferior */
+}
+
+.btn-primary {
+    background-color: #0044cc;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-weight: bold;
+    box-shadow: 0 6px 12px rgba(0, 85, 255, 0.3);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    display: inline-block;
+    margin-top: 10px; /* Ajuste ligero en el margen superior */
+}
+
+
+.btn-primary:hover {
+    background-color: #66b3ff;
+    box-shadow: 0 8px 16px rgba(0, 68, 204, 0.4);
+}
+
+/* Animación de Aparición */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Sección de Información */
+.info-section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #ffffff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 20px 0;
+    animation: fadeIn 1.5s ease;
+}
+
+.info-section h2 {
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.info-section p {
+    font-size: 18px;
+    max-width: 700px;
+    margin: auto;
+}
+
+.info-image {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    margin: 20px auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Servicios en Zig-Zag */
+.services-section {
+    padding: 80px 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+.services-title h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 32px;
+}
+
+.service-item {
+    display: flex;
+    align-items: center;
+    margin: 50px 0;
+    gap: 20px;
+    transition: transform 0.3s ease;
+}
+
+.service-item:hover {
+    transform: translateY(-10px);
+}
+
+.service-item .text {
+    flex: 1;
+    padding: 30px;
+    background: #e7f0ff;
+    border-radius: 15px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.service-item .image img {
+    width: 80%;
+    max-width: 350px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Media Queries para mejor adaptación */
+@media (max-width: 768px) {
+    .service-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero-content h2 {
+        font-size: 28px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+
+    .info-section h2 {
+        font-size: 24px;
+    }
+
+    .info-section p {
+        font-size: 14px;
+    }
+
+    .services-title h2 {
+        font-size: 28px;
+    }
+}
+
+/* Pie de Página */
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 40px;
+}
